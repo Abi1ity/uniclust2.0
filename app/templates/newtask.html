@@ -1,0 +1,14 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>'Adding a new task template!:'</h1>
+<div class="btn-group">
+  <button class="btn">Interface structure</button>
+  <button class="btn">Script</button>
+  <button class="btn">Source code parser</button>
+</div>
+{% include 'flash.html' %}
+{% include 'tasks_table.html' %}
+{{form.show()}}
+{% endblock %}

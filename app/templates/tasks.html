@@ -1,0 +1,9 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>'Table of tasks:'</h1>
+{% include 'flash.html' %}
+{% include 'tasks_table.html' %}
+{{form.fill_in_table()}}
+{% endblock %}

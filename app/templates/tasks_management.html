@@ -1,0 +1,15 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>'Table of all tasks in system:'</h1>
+<button class="btnAdd">Add new task template!</button>
+<div class="btn-group">
+  <button class="btn">1</button>
+  <button class="btn">2</button>
+  <button class="btn">3</button>
+</div>
+{% include 'flash.html' %}
+{% include 'tasks_table.html' %}
+{{form.fill_in_table1()}}
+{% endblock %}

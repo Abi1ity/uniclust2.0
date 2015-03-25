@@ -1,0 +1,3 @@
+			  <!--{% if g.user.role == ROLE_ADMIN %}-->
+              <!--<li><a href="{{ url_for('alltasks', nickname = g.user.nickname) }}">{{ _('All tasks') }}</a></li>-->
+			  <!--{% endif %}-->
